@@ -47,16 +47,19 @@ a {
 }
 
 /* header */
-.header {
-    position: relative;
+.fixed-header {
+    position: sticky;
+    top: -26px;
+    padding-top: 26px;
     background-color: #e6f0ff;
-    height: 100vh;
+    z-index: 1;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 
 .header-nav ul {
@@ -93,28 +96,36 @@ a {
     color: #ffffff;
 }
 
-.header-hero {
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #e6f0ff;
+    height: 100vh;
+}
+
+.hero {
     margin-top: 138px;
 }
 
-.header-hero .header-hero-img {
+.hero .hero-img {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
 }
 
-.header-hero-info {
+.hero-info {
     width: 50.36%;
 }
 
-.header-hero-info .sub-title {
+.hero-info .sub-title {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.018rem;
     color: #687690;
 }
 
-.header-hero-info .title {
+.hero-info .title {
     margin-top: 8px;
     font-size: 6.4rem;
     font-weight: 700;
@@ -122,7 +133,7 @@ a {
     color: #000336;
 }
 
-.header-hero-info .desc {
+.hero-info .desc {
     margin-top: 30px;
     font-size: 1.8rem;
     font-weight: 400;
@@ -130,7 +141,7 @@ a {
     color: #5a6473;
 }
 
-.header-hero-info .btn {
+.hero-info .btn {
     margin-top: 40px;
     min-width: 170px;
     padding: 19px 38px;
