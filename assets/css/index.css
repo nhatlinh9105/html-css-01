@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 html {
     font-size: 62.5%;
@@ -99,16 +103,14 @@ a {
 .hero-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
 }
 
-.hero {
-    margin-top: 138px;
-}
 
-.hero .hero-img {
+.hero-img {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
@@ -258,32 +260,32 @@ a {
     margin-top: 50px;
 }
 
-/* Future1 */
-.future1 {
+/* feature1 */
+.feature1 {
     margin-top: 41px;
     padding: 110px 0;
     background-color: #f5fafe;
 }
 
-.future1-header-title {
+.feature1-header-title {
     font-size: 3.5rem;
     font-weight: 600;
     color: #000339;
 }
 
-.future1-header-row {
+.feature1-header-row {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-.future1-header-row .desc {
+.feature1-header-row .desc {
     font-size: 1.6rem;
     font-weight: 400;
     color: #5a6473;
 }
 
-.future1-header-row .link {
+.feature1-header-row .link {
     display: flex;
     text-align: center;
     font-size: 1.8rem;
@@ -292,21 +294,21 @@ a {
     color: #0689ff;
 }
 
-.future1-header-row .link .arrow {
+.feature1-header-row .link .arrow {
     margin-left: 8px;
 }
 
-.future1-list {
+.feature1-list {
     display: flex;
     margin-top: 70px;
     gap: 30px;
 }
 
-.future1-list .future1-item {
+.feature1-list .feature1-item {
     flex: 1;
 }
 
-.future1-item .thumb {
+.feature1-item .thumb {
     width: 100%;
     height: 227px;
     object-fit: cover;
@@ -314,21 +316,21 @@ a {
     border-top-right-radius: 12px;
 }
 
-.future1-item .future1-item-info {
+.feature1-item .feature1-item-info {
     background-color: #ffffff;
     padding: 17px 20px 24px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.future1-item-info .title a {
+.feature1-item-info .title a {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
     color: #000339;
 }
 
-.future1-item-info .desc {
+.feature1-item-info .desc {
     --line-clamp: 3;
     margin-top: 11px;
     font-size: 1.4rem;
@@ -337,13 +339,13 @@ a {
     color: #a3a6ab;
 }
 
-.future1-item-info .future1-item-detail {
+.feature1-item-info .feature1-item-detail {
     display: flex;
     align-items: center;
     margin-top: 22px;
 }
 
-.future1-item-detail .label {
+.feature1-item-detail .label {
     margin-left: 8px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -351,11 +353,11 @@ a {
     color: #444;
 }
 
-.future1-item-detail .icon {
+.feature1-item-detail .icon {
     margin-left: 23px;
 }
 
-.future1-item-detail .icon:first-child {
+.feature1-item-detail .icon:first-child {
     margin-left: 0;
 }
 
